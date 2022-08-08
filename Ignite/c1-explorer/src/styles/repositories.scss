@@ -1,0 +1,33 @@
+section.repository-list {
+  margin: 40px;
+
+  h1 {
+    margin-bottom: 16px;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    // "&" no sass referencia o próprio elemento.
+    // "& + li" define as propriedades somente para os elementos que tiverem outro elemento
+    // do mesmo tipo antes dele, no caso o "li".
+    & + li {
+      margin-top: 20px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #444;
+      margin-top: 8px;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 16px;
+      text-decoration: none;
+      color: #8257e6;
+    }
+  }
+}
